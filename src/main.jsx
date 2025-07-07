@@ -6,7 +6,7 @@ import Dashboard from './Dashboard.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/jobfrontapp1">
     <Routes>
       <Route path='/' element={<App/>} />
       <Route path='/dashboard' element={<Dashboard/>} />

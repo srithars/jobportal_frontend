@@ -1,4 +1,4 @@
-export const BASEURL = "http://15.207.254.54:8080/jobportal/";
+export const BASEURL = "http://localhost:9090/jobportal/";
 export function callApi(reqmethod, url, data, responseHandler)
 {
     let options = "";
