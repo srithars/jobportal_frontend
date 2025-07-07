@@ -1,4 +1,4 @@
-export const BASEURL = "http://localhost:9090/jobportal/";
+export const BASEURL = "http://localhost:9090/jobbackapp1/jobportal/";
 export function callApi(reqmethod, url, data, responseHandler)
 {
     let options = "";
