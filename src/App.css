@@ -1,0 +1,272 @@
+#container{
+    width: 100%;
+    height: 100%;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    background: white;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 110px);
+    background: #FDF1F4;
+}
+#footer{
+    width: 100%;
+    height: 40px;
+    background: white;
+}
+#footer img{
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+#footer label{
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    float: left;
+    font-size: 7pt;
+}
+#header .logo{
+    width: 40px;
+    position: relative;
+    margin-left: 10px;
+    top: 13px;
+    float: left;
+}
+#header div{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 13px;
+    float: left;
+    margin-left: 10px;
+    color: #3C4652;
+}
+#header div span{
+    color: #27AE;
+}
+#header .signin{
+    width: 24px;
+    position: relative;
+    top: 20px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#header label{
+    position: relative;
+    top: 25px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#header label:hover,
+#header .signin:hover + label
+{
+    text-decoration: underline;
+}
+#content .text1{
+    font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+    margin-left: 10px;
+    top: 30px;
+    color: rgb(13, 130, 104);
+    display: block;
+}
+#content .text2{
+    font-size: 30pt;
+    font-weight: bold;
+    position: relative;
+    margin-left: 10px;
+    top: 40px;
+    display: block;
+}
+#content .text3{
+    font-size: 14pt;
+    position: relative;
+    margin-left: 10px;
+    top: 50px;
+    display: block;
+}
+#content div{
+    width: 700px;
+    height: 40px;
+    padding: 5px;
+    background: white;
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    top: 60px;
+    border-radius: 3px;
+}
+#content div .searchSkill{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-right: 1px solid silver;
+    background: url('/searchicon.png') no-repeat;
+    background-size: 40px 30px;
+    background-position: 0px center;
+    padding-left: 40px;
+}
+#content div .searchLocation{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: url('/location.png') no-repeat;
+    background-size: 30px 30px;
+    background-position: 0px center;
+    padding-left: 30px;
+}
+#content div button{
+    width: 125px;
+    height: 40px;
+    background: rgb(13, 130, 104);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+}
+#popup{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgb(0,0,0, 0.25);
+    display: none;
+}
+#popup #popupWindow{
+    width: 300px;
+    height: 450px;
+    background: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#popupWindow #signinpage{
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: none;
+}
+#popupWindow #signuppage{
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: block;
+}
+#signinpage .signinTitle, #signuppage .signupTitle{
+    width: 100%;
+    height: 50px;
+    background: rgb(13, 130, 104);
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+#signinpage .signindiv, #signuppage .signupdiv{
+    width: calc(100% - 10px);
+    height: calc(100% - 60px);
+    background: white;
+    padding: 5px;
+}
+#signinpage .signindiv .usernamelabel{
+    padding-top: 25px;
+    padding-bottom: 3px;
+    display: block;
+}
+#signinpage .signindiv input, #signuppage .signupdiv input{
+    width: 98%;
+    height: 25px; 
+    border: 1px solid silver;
+    border-radius: 2px;  
+}
+#signinpage .signindiv .passwordlabel{
+    padding-top: 10px;
+    padding-bottom: 3px;
+    display: block;
+}
+#signinpage .signindiv .forgotpassword{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+#signinpage .signindiv .forgotpassword .forgotpasswordlabel{
+    color: rgb(13, 130, 104);
+    cursor: pointer;
+}
+#signinpage .signindiv button{
+    width: 100%;
+    height: 35px;
+    color: white;
+    background: rgb(13, 130, 104);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#signinpage .signindiv button:hover{
+    background-color: rgb(13, 150, 104);
+}
+#signinpage .signindiv .spacediv{
+    width: 100%;
+    height: 100px;
+}
+#signinpage .signindiv .createaccount{
+    width: 100%;
+    text-align: center;
+}
+#signinpage .signindiv .createaccount .signupnowlabel{
+    color: rgb(13, 130, 104);
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    padding-top: 10px;
+}
+#signuppage .signupdiv label{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+#signuppage .signupdiv select{
+    width: 100%;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+#signuppage .signupdiv button{
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background: rgb(13, 130, 104);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#signuppage .signupdiv button:hover{
+    background: rgb(13, 150, 104);
+}
+#signuppage .signupdiv .signinnavigation{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+#signuppage .signupdiv .signinnavigation .signinspan{
+    color: rgb(13, 130, 104);
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,171 @@
+.jpcontainer{
+    width: 100%;
+    height: 100%;
+}
+.jpcontainer .header{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+}
+.jpcontainer .content{
+    width: 100%;
+    height: calc(100% - 71px);
+    overflow: auto;
+}
+.jpcontainer .footer{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+}
+.jpcontainer .header label{
+    font-size: 12pt;
+    font-weight: bold;
+}
+.jpcontainer .footer button{
+    height: 28px;
+    background: rgb(13, 150, 104);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 9pt;
+}
+.jpcontainer .footer button:hover{
+    cursor: pointer;
+    background: rgb(13, 180, 104);
+}
+.jpcontainer .popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: rgb(0, 0, 0, 0.25);
+    display: none;
+}
+.jpcontainer .popupWindow{
+    width: 400px;
+    height: 500px;
+    background: white;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-75% , -55%);
+}
+.jpcontainer .popup .popupWindow .popupHeader{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background: #274DBE;
+}
+.jpcontainer .popup .popupWindow .popupContent{
+    width: calc(100% - 20px);
+    height: calc(100% - 65px);
+    padding: 10px;
+}
+.jpcontainer .popup .popupWindow .popupFooter{
+    width: 100%;
+    height: 15px;
+    line-height: 15px;
+    background: #274DBE;
+}
+.jpcontainer .popup .popupWindow .popupHeader label{
+    float: left;
+    padding-left: 5px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.jpcontainer .popup .popupWindow .popupHeader span{
+    float: right;
+    padding-right: 15px;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.jpcontainer .popup .popupWindow .popupContent label{
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+.jpcontainer .popup .popupWindow .popupContent input{
+    width: 99%;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.jpcontainer .popup .popupWindow .popupContent select{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.jpcontainer .popup .popupWindow .popupContent textarea{
+    width: 99%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.jpcontainer .popup .popupWindow .popupContent button{
+    width: 75px;
+    height: 30px;
+    background: rgb(13, 150, 104);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 9pt;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.jpcontainer .popup .popupWindow .popupContent button:hover{
+    cursor: pointer;
+    background: rgb(13, 180, 104);
+}
+.jpcontainer .content .result{
+    margin: 20px;
+    padding: 10px;
+    width: calc(100% - 60px);
+    background: white;
+}
+.jpcontainer .content .result .rheader{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.jpcontainer .content .result .rheader label{
+    float: left;
+}
+.jpcontainer .content .result .rheader span{
+    float: left;
+    color: red;
+    margin-left: 10px;
+    background: lightpink;
+    border-radius: 5px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.jpcontainer .content .result .rheader img{
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.jpcontainer .content .result .rheader img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.jpcontainer .content .result .rcontent{
+    height: 35px;
+    line-height: 35px;
+    color: gray;
+}
+.jpcontainer .content .result .rfooter{
+    height: 35px;
+    line-height: 35px;
+    background: whitesmoke;
+}
